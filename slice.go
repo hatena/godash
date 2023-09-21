@@ -1,4 +1,4 @@
-package lo
+package godash
 
 import slo "github.com/samber/lo"
 
