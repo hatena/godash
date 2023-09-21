@@ -1,4 +1,4 @@
-module github.com/hatena/go-lo
+module github.com/hatena/godash
 
 go 1.21.1
 
