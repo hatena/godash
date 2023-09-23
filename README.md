@@ -1,5 +1,7 @@
 # godash
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/hatena/godash.svg)](https://pkg.go.dev/github.com/hatena/godash)
+
 hatena/godash is a minimal wrapper of https://github.com/samber/lo.
 
 ## Motivation
