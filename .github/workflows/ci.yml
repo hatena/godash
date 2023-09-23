@@ -5,8 +5,10 @@ on:
 
 jobs:
   test:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-go@v4
-      with:
-        go-version-file: "go.mod"
-    - run: go test -v
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v4
+        with:
+          go-version-file: "go.mod"
+      - run: go test -v
