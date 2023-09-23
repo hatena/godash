@@ -1,6 +1,6 @@
-// Package godash implements slice/map related methods and is a wrapper of the [samber/lo] package.
+// Package godash implements slice/map related methods and is a wrapper of the [github.com/samber/lo] package.
 //
-// This package focuses on only presenting a subset of functions from the [samber/lo],
+// This package focuses on only presenting a subset of functions from [github.com/samber/lo],
 // in order to make sure that the user takes advantage of Go's standard methods from the slice package etc.
 // If any of the functions presented here gets included in the standard library, that function will be
 // marked deprecated (the function will not get removed, but will point the user to the standard library).
