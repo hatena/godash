@@ -52,3 +52,164 @@ func ExampleUniqBy() {
 	}))
 	// Output: [{1 foo} {2 foobar} {3 foo}]
 }
+
+func ExampleGroupBy() {
+	type User struct {
+		id   int
+		name string
+	}
+	users := []User{
+		{1, "foo"},
+		{2, "foobar"},
+		{3, "foobar"},
+		{4, "foo"},
+		{5, "bar"},
+	}
+	fmt.Println(godash.GroupBy(users, func(u User) string {
+		return u.name
+	}))
+	// Output: map[bar:[{5 bar}] foo:[{1 foo} {4 foo}] foobar:[{2 foobar} {3 foobar}]]
+}
+
+func ExampleChunk() {
+	integers := []int{0, 1, 1, 3, 2, 1, 1, 0}
+	fmt.Println(godash.Chunk(integers, 3))
+	// Output: [[0 1 1] [3 2 1] [1 0]]
+}
+
+func ExamplePartitionBy() {
+	type User struct {
+		id   int
+		name string
+	}
+	users := []User{
+		{1, "foo"},
+		{2, "foobar"},
+		{3, "foobar"},
+		{4, "foo"},
+		{5, "bar"},
+	}
+	fmt.Println(godash.PartitionBy(users, func(u User) string {
+		return u.name
+	}))
+	// Output: [[{1 foo} {4 foo}] [{2 foobar} {3 foobar}] [{5 bar}]]
+}
+
+func ExampleFlatten() {
+	integers := [][]int{
+		{1, 2, 5, 10},
+		{9, 8, 1},
+		{0},
+		{42, 3},
+	}
+	fmt.Println(godash.Flatten(integers))
+	// Output: [1 2 5 10 9 8 1 0 42 3]
+}
+
+func ExampleKeyBy() {
+	type User struct {
+		id   int
+		name string
+	}
+	users := []User{
+		{1, "foo"},
+		{2, "foobar"},
+		{3, "foobar"},
+		{4, "foo"},
+		{5, "bar"},
+	}
+	fmt.Println(godash.KeyBy(users, func(u User) int {
+		return u.id
+	}))
+	// Output: map[1:{1 foo} 2:{2 foobar} 3:{3 foobar} 4:{4 foo} 5:{5 bar}]
+}
+
+func ExampleKeys() {
+	m := map[int]string{
+		1: "foo",
+		2: "bar",
+		3: "baz",
+	}
+	fmt.Println(godash.Keys(m))
+	// Output: [1 2 3]
+}
+
+func ExampleValues() {
+	m := map[int]string{
+		1: "foo",
+		2: "bar",
+		3: "baz",
+	}
+	fmt.Println(godash.Values(m))
+	// Output: [foo bar baz]
+}
+
+func ExampleSum() {
+	numbers := []float32{1, 5, 2, 3.2, 42}
+	fmt.Println(godash.Sum(numbers))
+	// Output: 53.2
+}
+
+func ExampleSumBy() {
+	type User struct {
+		name string
+		age  int
+	}
+	users := []User{
+		{"foo", 20},
+		{"bar", 25},
+		{"baz", 40},
+	}
+	fmt.Println(godash.SumBy(users, func(u User) int {
+		return u.age
+	}))
+	// Output: 85
+}
+
+func ExampleEveryBy() {
+	type User struct {
+		name string
+		age  int
+	}
+	users := []User{
+		{"foo", 20},
+		{"bar", 25},
+		{"baz", 40},
+	}
+	fmt.Println(godash.EveryBy(users, func(u User) bool {
+		return u.age >= 20
+	}))
+	// Output: true
+}
+
+func ExampleNoneBy() {
+	type User struct {
+		name string
+		age  int
+	}
+	users := []User{
+		{"foo", 20},
+		{"bar", 25},
+		{"baz", 40},
+	}
+	fmt.Println(godash.NoneBy(users, func(u User) bool {
+		return u.age > 40
+	}))
+	// Output: true
+}
+
+func ExampleFind() {
+	type User struct {
+		name string
+		age  int
+	}
+	users := []User{
+		{"foo", 20},
+		{"bar", 25},
+		{"baz", 40},
+	}
+	fmt.Println(godash.Find(users, func(u User) bool {
+		return u.age > 24
+	}))
+	// Output: {bar 25} true
+}
