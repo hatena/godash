@@ -2,6 +2,7 @@ package godash_test
 
 import (
 	"fmt"
+	"slices"
 
 	"github.com/hatena/godash"
 )
@@ -130,7 +131,9 @@ func ExampleKeys() {
 		2: "bar",
 		3: "baz",
 	}
-	fmt.Println(godash.Keys(m))
+	keys := godash.Keys(m)
+	slices.Sort(keys)
+	fmt.Println(keys)
 	// Output: [1 2 3]
 }
 
@@ -140,8 +143,10 @@ func ExampleValues() {
 		2: "bar",
 		3: "baz",
 	}
-	fmt.Println(godash.Values(m))
-	// Output: [foo bar baz]
+	values := godash.Values(m)
+	slices.Sort(values)
+	fmt.Println(values)
+	// Output: [bar baz foo]
 }
 
 func ExampleSum() {
