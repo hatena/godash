@@ -1,7 +1,12 @@
 name: CI
 
 on:
-  push
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
   test:
@@ -21,4 +26,6 @@ jobs:
           go-version-file: "go.mod"
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
+        with:
           version: v3.7.0
+          only-new-issues: true
