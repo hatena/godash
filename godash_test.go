@@ -218,3 +218,19 @@ func ExampleFind() {
 	}))
 	// Output: {bar 25} true
 }
+
+func ExampleAssociate() {
+	type User struct {
+		name string
+		age  int
+	}
+	users := []User{
+		{"foo", 20},
+		{"bar", 25},
+		{"baz", 40},
+	}
+	fmt.Println(godash.Associate(users, func(u User) (string, int) {
+		return u.name, u.age
+	}))
+	// Output: map[bar:25 baz:40 foo:20]
+}

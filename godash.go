@@ -96,3 +96,7 @@ func NoneBy[T any](collection []T, predicate func(item T) bool) bool {
 func Find[T any](collection []T, predicate func(item T) bool) (T, bool) {
 	return lo.Find(collection, predicate)
 }
+
+func Associate[T any, K comparable, V any](collection []T, transform func(item T) (K, V)) map[K]V {
+	return lo.Associate(collection, transform)
+}
