@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.3](https://github.com/hatena/godash/compare/v1.0.2...v1.0.3) - 2023-11-21
+- Use generated token for actions/checkout by @stefafafan in https://github.com/hatena/godash/pull/17
+- Add Associate wrapper function by @lufia in https://github.com/hatena/godash/pull/19
+
 ## [v1.0.2](https://github.com/hatena/godash/compare/v1.0.1...v1.0.2) - 2023-10-15
 - Add GitHub Workflow for tagpr by @stefafafan in https://github.com/hatena/godash/pull/15
 
