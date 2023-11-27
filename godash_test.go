@@ -234,3 +234,11 @@ func ExampleAssociate() {
 	}))
 	// Output: map[bar:25 baz:40 foo:20]
 }
+
+func ExampleFlatMap() {
+	integers := []int{0, 1, 2, 3}
+	fmt.Println(godash.FlatMap(integers, func(x int, _ int) []int {
+		return []int{2 * x, 2*x + 1}
+	}))
+	// Output: [0 1 2 3 4 5 6 7]
+}
