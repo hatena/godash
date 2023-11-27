@@ -87,6 +87,11 @@ func EveryBy[T any](collection []T, predicate func(item T) bool) bool {
 	return lo.EveryBy(collection, predicate)
 }
 
+// SomeBy returns whether or not any of the values within the collection meet the predicate.
+func SomeBy[T any](collection []T, predicate func(item T) bool) bool {
+	return lo.SomeBy(collection, predicate)
+}
+
 // NoneBy returns whether or not all the values within the collection do not meet the predicate.
 func NoneBy[T any](collection []T, predicate func(item T) bool) bool {
 	return lo.NoneBy(collection, predicate)

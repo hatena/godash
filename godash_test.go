@@ -187,6 +187,22 @@ func ExampleEveryBy() {
 	// Output: true
 }
 
+func ExampleSomeBy() {
+	type User struct {
+		name string
+		age  int
+	}
+	users := []User{
+		{"foo", 20},
+		{"bar", 25},
+		{"baz", 40},
+	}
+	fmt.Println(godash.SomeBy(users, func(u User) bool {
+		return u.age >= 30
+	}))
+	// Output: true
+}
+
 func ExampleNoneBy() {
 	type User struct {
 		name string
