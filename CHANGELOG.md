@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.4](https://github.com/hatena/godash/compare/v1.0.3...v1.0.4) - 2023-11-28
+- Apply `go mod tidy` by @utgwkk in https://github.com/hatena/godash/pull/21
+- Add FlatMap and SomeBy function by @utgwkk in https://github.com/hatena/godash/pull/20
+
 ## [v1.0.3](https://github.com/hatena/godash/compare/v1.0.2...v1.0.3) - 2023-11-21
 - Use generated token for actions/checkout by @stefafafan in https://github.com/hatena/godash/pull/17
 - Add Associate wrapper function by @lufia in https://github.com/hatena/godash/pull/19
