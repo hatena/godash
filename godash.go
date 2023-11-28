@@ -87,6 +87,11 @@ func EveryBy[T any](collection []T, predicate func(item T) bool) bool {
 	return lo.EveryBy(collection, predicate)
 }
 
+// SomeBy returns whether or not any of the values within the collection meet the predicate.
+func SomeBy[T any](collection []T, predicate func(item T) bool) bool {
+	return lo.SomeBy(collection, predicate)
+}
+
 // NoneBy returns whether or not all the values within the collection do not meet the predicate.
 func NoneBy[T any](collection []T, predicate func(item T) bool) bool {
 	return lo.NoneBy(collection, predicate)
@@ -99,4 +104,9 @@ func Find[T any](collection []T, predicate func(item T) bool) (T, bool) {
 
 func Associate[T any, K comparable, V any](collection []T, transform func(item T) (K, V)) map[K]V {
 	return lo.Associate(collection, transform)
+}
+
+// FlatMap iterates through the collection and returns a slice with the values converted through the iteratee and flattened.
+func FlatMap[T any, R any](collection []T, iteratee func(item T, index int) []R) []R {
+	return lo.FlatMap(collection, iteratee)
 }

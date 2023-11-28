@@ -187,6 +187,22 @@ func ExampleEveryBy() {
 	// Output: true
 }
 
+func ExampleSomeBy() {
+	type User struct {
+		name string
+		age  int
+	}
+	users := []User{
+		{"foo", 20},
+		{"bar", 25},
+		{"baz", 40},
+	}
+	fmt.Println(godash.SomeBy(users, func(u User) bool {
+		return u.age >= 30
+	}))
+	// Output: true
+}
+
 func ExampleNoneBy() {
 	type User struct {
 		name string
@@ -233,4 +249,12 @@ func ExampleAssociate() {
 		return u.name, u.age
 	}))
 	// Output: map[bar:25 baz:40 foo:20]
+}
+
+func ExampleFlatMap() {
+	integers := []int{0, 1, 2, 3}
+	fmt.Println(godash.FlatMap(integers, func(x int, _ int) []int {
+		return []int{2 * x, 2*x + 1}
+	}))
+	// Output: [0 1 2 3 4 5 6 7]
 }
