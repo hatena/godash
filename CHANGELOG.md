@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.5](https://github.com/hatena/godash/compare/v1.0.4...v1.0.5) - 2023-12-11
+- Bump github.com/samber/lo from 1.38.1 to 1.39.0 by @dependabot in https://github.com/hatena/godash/pull/23
+- Bump actions/setup-go from 4 to 5 by @dependabot in https://github.com/hatena/godash/pull/25
+
 ## [v1.0.4](https://github.com/hatena/godash/compare/v1.0.3...v1.0.4) - 2023-11-28
 - Apply `go mod tidy` by @utgwkk in https://github.com/hatena/godash/pull/21
 - Add FlatMap and SomeBy function by @utgwkk in https://github.com/hatena/godash/pull/20
