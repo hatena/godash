@@ -110,3 +110,8 @@ func Associate[T any, K comparable, V any](collection []T, transform func(item T
 func FlatMap[T any, R any](collection []T, iteratee func(item T, index int) []R) []R {
 	return lo.FlatMap(collection, iteratee)
 }
+
+// PickByKeys returns same map type filtered by given keys.
+func PickByKeys[K comparable, V any, Map ~map[K]V](in Map, keys []K) Map {
+	return lo.PickByKeys(in, keys)
+}

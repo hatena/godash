@@ -258,3 +258,10 @@ func ExampleFlatMap() {
 	}))
 	// Output: [0 1 2 3 4 5 6 7]
 }
+
+func ExamplePickByKeys() {
+	kv := map[string]int{"foo": 1, "bar": 2, "baz": 3}
+	result := godash.PickByKeys(kv, []string{"foo", "baz"})
+	fmt.Printf("%v", result)
+	// Output: map[baz:3 foo:1]
+}
