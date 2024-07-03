@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.5](https://github.com/hatena/godash/compare/v1.0.4...v1.0.5) - 2024-07-03
+- Bump github.com/samber/lo from 1.38.1 to 1.39.0 by @dependabot in https://github.com/hatena/godash/pull/23
+- Bump actions/setup-go from 4 to 5 by @dependabot in https://github.com/hatena/godash/pull/25
+- Bump golangci/golangci-lint-action from 3 to 5 by @dependabot in https://github.com/hatena/godash/pull/27
+- Bump github.com/samber/lo from 1.39.0 to 1.44.0 by @dependabot in https://github.com/hatena/godash/pull/29
+- PickByKeys を追加 by @ne-sachirou in https://github.com/hatena/godash/pull/30
+- Bump golangci/golangci-lint-action from 5 to 6 by @dependabot in https://github.com/hatena/godash/pull/28
+
 ## [v1.0.4](https://github.com/hatena/godash/compare/v1.0.3...v1.0.4) - 2023-11-28
 - Apply `go mod tidy` by @utgwkk in https://github.com/hatena/godash/pull/21
 - Add FlatMap and SomeBy function by @utgwkk in https://github.com/hatena/godash/pull/20
