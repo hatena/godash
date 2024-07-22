@@ -1,5 +1,8 @@
 # Changelog
 
+## [v1.0.6](https://github.com/hatena/godash/compare/v1.0.5...v1.0.6) - 2024-07-22
+- Bump github.com/samber/lo from 1.44.0 to 1.46.0 by @dependabot in https://github.com/hatena/godash/pull/32
+
 ## [v1.0.5](https://github.com/hatena/godash/compare/v1.0.4...v1.0.5) - 2024-07-03
 - Bump github.com/samber/lo from 1.38.1 to 1.39.0 by @dependabot in https://github.com/hatena/godash/pull/23
 - Bump actions/setup-go from 4 to 5 by @dependabot in https://github.com/hatena/godash/pull/25
