@@ -42,6 +42,7 @@ func GroupBy[T any, U comparable](collection []T, iteratee func(item T) U) map[U
 }
 
 // Chunk receives the collection and chunks it into a slice of slices each of the given size.
+// Deprecated: Use https://pkg.go.dev/slices#Chunk instead.
 func Chunk[T any](collection []T, size int) [][]T {
 	return lo.Chunk(collection, size)
 }
@@ -63,11 +64,13 @@ func KeyBy[K comparable, V any](collection []V, iteratee func(item V) K) map[K]V
 }
 
 // Keys returns the keys of the map as a slice.
+// Deprecated: Use https://pkg.go.dev/maps#Keys instead.
 func Keys[K comparable, V any](in map[K]V) []K {
 	return lo.Keys(in)
 }
 
 // Values returns the values of the map as a slice.
+// Deprecated: Use https://pkg.go.dev/maps#Values instead.
 func Values[K comparable, V any](in map[K]V) []V {
 	return lo.Values(in)
 }
