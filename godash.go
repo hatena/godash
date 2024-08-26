@@ -41,13 +41,6 @@ func GroupBy[T any, U comparable](collection []T, iteratee func(item T) U) map[U
 	return lo.GroupBy(collection, iteratee)
 }
 
-// Chunk receives the collection and chunks it into a slice of slices each of the given size.
-//
-// Deprecated: Use https://pkg.go.dev/slices#Chunk instead.
-func Chunk[T any](collection []T, size int) [][]T {
-	return lo.Chunk(collection, size)
-}
-
 // PartitionBy partitions the collection by the iteratee. This is similar to Chunk, but instead of a given size, a function can be applied.
 // Use GroupBy if you want a map of slices.
 func PartitionBy[T any, K comparable](collection []T, iteratee func(item T) K) [][]T {
@@ -62,20 +55,6 @@ func Flatten[T any](collection [][]T) []T {
 // KeyBy iterates through the collection and returns a map with the key generated via the iteratee.
 func KeyBy[K comparable, V any](collection []V, iteratee func(item V) K) map[K]V {
 	return lo.KeyBy(collection, iteratee)
-}
-
-// Keys returns the keys of the map as a slice.
-//
-// Deprecated: Use https://pkg.go.dev/maps#Keys instead.
-func Keys[K comparable, V any](in map[K]V) []K {
-	return lo.Keys(in)
-}
-
-// Values returns the values of the map as a slice.
-//
-// Deprecated: Use https://pkg.go.dev/maps#Values instead.
-func Values[K comparable, V any](in map[K]V) []V {
-	return lo.Values(in)
 }
 
 // Sum returns a sum of the values within the slice. The values of the slice need to be numbers.
