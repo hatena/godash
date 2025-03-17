@@ -1,5 +1,10 @@
 # Changelog
 
+## [v1.0.6](https://github.com/hatena/godash/compare/v1.0.5...v1.0.6) - 2025-03-17
+- Bump github.com/samber/lo from 1.44.0 to 1.46.0 by @dependabot in https://github.com/hatena/godash/pull/32
+- Deprecate methods added in Go 1.23 by @stefafafan in https://github.com/hatena/godash/pull/35
+- add a notice to README.md by @lufia in https://github.com/hatena/godash/pull/36
+
 ## [v1.0.5](https://github.com/hatena/godash/compare/v1.0.4...v1.0.5) - 2024-07-03
 - Bump github.com/samber/lo from 1.38.1 to 1.39.0 by @dependabot in https://github.com/hatena/godash/pull/23
 - Bump actions/setup-go from 4 to 5 by @dependabot in https://github.com/hatena/godash/pull/25
