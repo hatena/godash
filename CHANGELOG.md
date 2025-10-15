@@ -1,5 +1,8 @@
 # Changelog
 
+## [v1.0.7](https://github.com/hatena/godash/compare/v1.0.6...v1.0.7) - 2025-10-15
+- .github/workflows: update actions by @lufia in https://github.com/hatena/godash/pull/37
+
 ## [v1.0.6](https://github.com/hatena/godash/compare/v1.0.5...v1.0.6) - 2025-03-17
 - Bump github.com/samber/lo from 1.44.0 to 1.46.0 by @dependabot in https://github.com/hatena/godash/pull/32
 - Deprecate methods added in Go 1.23 by @stefafafan in https://github.com/hatena/godash/pull/35
