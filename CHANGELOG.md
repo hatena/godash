@@ -1,5 +1,10 @@
 # Changelog
 
+## [v1.0.7](https://github.com/hatena/godash/compare/v1.0.6...v1.0.7) - 2026-07-17
+- .github/workflows: update actions by @lufia in https://github.com/hatena/godash/pull/37
+- docs: Revise golangci-lint settings and CI actions in README.md by @utgwkk in https://github.com/hatena/godash/pull/39
+- Bump github.com/samber/lo from 1.46.0 to 1.53.0 by @dependabot[bot] in https://github.com/hatena/godash/pull/34
+
 ## [v1.0.6](https://github.com/hatena/godash/compare/v1.0.5...v1.0.6) - 2025-03-17
 - Bump github.com/samber/lo from 1.44.0 to 1.46.0 by @dependabot in https://github.com/hatena/godash/pull/32
 - Deprecate methods added in Go 1.23 by @stefafafan in https://github.com/hatena/godash/pull/35
