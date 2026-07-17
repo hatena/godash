@@ -48,14 +48,13 @@ Below is a minimal `.golangci.yml` configuration to deny `samber/lo` imports.
 linters:
   enable:
     - depguard
-
-linters-settings:
-  depguard:
-    rules:
-      deny-samber-lo:
-        deny:
-          - pkg: "github.com/samber/lo"
-            desc: Use github.com/hatena/godash instead.
+  settings:
+    depguard:
+      rules:
+        deny-samber-lo:
+          deny:
+            - pkg: "github.com/samber/lo"
+              desc: Use github.com/hatena/godash instead.
 ```
 
 Once you have `.golangci.yml`, make sure to run `golangci-lint` via CI. Below is an example for GitHub Actions.
@@ -76,14 +75,14 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
         with:
           go-version-file: "go.mod"
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3
+        uses: golangci/golangci-lint-action@v9
         with:
-          version: v1.54.2
+          version: v2.12.2
           only-new-issues: true
 ```
 
