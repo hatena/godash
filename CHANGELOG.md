@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.8](https://github.com/hatena/godash/compare/v1.0.7...v1.0.8) - 2026-10-05
+
+- Bump Songmu/tagpr from 1.9.0 to 1.21.1 by @dependabot[bot] in https://github.com/hatena/godash/pull/49
+
 ## [v1.0.7](https://github.com/hatena/godash/compare/v1.0.6...v1.0.7) - 2026-07-17
 - .github/workflows: update actions by @lufia in https://github.com/hatena/godash/pull/37
 - docs: Revise golangci-lint settings and CI actions in README.md by @utgwkk in https://github.com/hatena/godash/pull/39
