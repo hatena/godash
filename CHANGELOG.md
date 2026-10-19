@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.0.8](https://github.com/hatena/godash/compare/v1.0.7...v1.0.8) - 2026-10-19
+
+- Bump Songmu/tagpr from 1.9.0 to 1.21.1 by @dependabot[bot] in https://github.com/hatena/godash/pull/49
+- Bump Songmu/tagpr from 1.21.1 to 1.21.3 by @dependabot[bot] in https://github.com/hatena/godash/pull/52
+- Bump actions/create-github-app-token from 2.1.4 to 3.3.0 by @dependabot[bot] in https://github.com/hatena/godash/pull/53
+- Bump actions/checkout from 5.0.0 to 7.0.1 by @dependabot[bot] in https://github.com/hatena/godash/pull/45
+- Bump actions/setup-go from 6.0.0 to 7.0.0 by @dependabot[bot] in https://github.com/hatena/godash/pull/43
+- .github: add cooldown and groups parameters by @lufia in https://github.com/hatena/godash/pull/54
+- Bump golangci/golangci-lint-action from 8.0.0 to 9.3.0 by @dependabot[bot] in https://github.com/hatena/godash/pull/42
+
 ## [v1.0.7](https://github.com/hatena/godash/compare/v1.0.6...v1.0.7) - 2026-07-17
 - .github/workflows: update actions by @lufia in https://github.com/hatena/godash/pull/37
 - docs: Revise golangci-lint settings and CI actions in README.md by @utgwkk in https://github.com/hatena/godash/pull/39
