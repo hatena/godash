@@ -8,6 +8,12 @@ updates:
     time: "09:00"
     timezone: Asia/Tokyo
   open-pull-requests-limit: 10
+  cooldown:
+    default-days: 3
+  groups:
+    weekly-batch:
+      patterns:
+        - '*'
 - package-ecosystem: github-actions
   directory: /
   schedule:
@@ -16,3 +22,9 @@ updates:
     time: "09:00"
     timezone: Asia/Tokyo
   open-pull-requests-limit: 10
+  cooldown:
+    default-days: 3
+  groups:
+    weekly-batch:
+      patterns:
+        - '*'
